@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add To Cart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+     body {
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #e6ebf2);
+  padding: 60px;
+  color: #333;
+}
+
+.invoice {
+  max-width: 640px;
+  margin: auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e6ed;
+  transition: transform 0.3s ease;
+}
+
+.invoice:hover {
+  transform: translateY(-4px);
+}
+
+h2 {
+  margin-bottom: 28px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #0d3b2e;
+  border-bottom: 2px solid #e0e6ed;
+  padding-bottom: 14px;
+  letter-spacing: 0.5px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.row span:first-child {
+  color: #555;
+}
+
+.total {
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 28px;
+  color: #0d3b2e;
+  border-top: 2px solid #e0e6ed;
+  padding-top: 14px;
+}
+
+a {
+  display: inline-block;
+  margin-top: 32px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #0d3b2e, #145c3a);
+  color: #fff;
+  font-weight: 600;
+  padding: 14px 24px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(13, 59, 46, 0.25);
+}
+
+a:hover {
+  background: linear-gradient(135deg, #145c3a, #0d3b2e);
+  transform: translateY(-3px);
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="invoice">
+    <h2>Order Summary</h2>
+
+    <div class="row">
+      <span>Subscription</span>
+      <span id="plan"></span>
+    </div>
+
+    <div class="row">
+      <span>Fragrance 1</span>
+      <span id="fragrance1"></span>
+    </div>
+
+    <div class="row" id="fragrance2-row" style="display:none;">
+      <span>Fragrance 2</span>
+      <span id="fragrance2"></span>
+    </div>
+
+    <div class="row total">
+      <span>Total</span>
+      <span>$<span id="price"></span></span>
+    </div>
+
+    <a href="index.html">← Back to Shop</a>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+
+    const plan = params.get("plan");
+    const fragrance1 = params.get("fragrance1");
+    const fragrance2 = params.get("fragrance2");
+    const price = params.get("price");
+
+    document.getElementById("plan").textContent = plan;
+    document.getElementById("fragrance1").textContent = fragrance1;
+    document.getElementById("price").textContent = price;
+
+    if (fragrance2) {
+      document.getElementById("fragrance2").textContent = fragrance2;
+      document.getElementById("fragrance2-row").style.display = "flex";
+    }
+  </script>
+
+</body>
+</html>
