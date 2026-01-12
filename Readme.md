@@ -1,5 +1,5 @@
 ## GTG Perfumes Website : https://gtg-perfumes-3e0ort71l-rashis-projects-064245c1.vercel.app
-<hr><hr width="40px> 
+
 A fully responsive promotional and product showcase website for **GTG Perfumes**.  
 - > Built with modern **HTML, CSS, and JavaScript**, this project adapts seamlessly to **all screen sizes** — from large desktops to tablets and mobile devices (including iPhone X / 375px screens).
 
@@ -29,5 +29,6 @@ A fully responsive promotional and product showcase website for **GTG Perfumes**
 
 git clone https://github.com/your-username/gtg-perfumes.git
 cd gtg-perfumes
+
 
 
