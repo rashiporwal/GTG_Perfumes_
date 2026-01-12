@@ -27,8 +27,17 @@ A fully responsive promotional and product showcase website for **GTG Perfumes**
 
 ---
 
-git clone https://github.com/your-username/gtg-perfumes.git
-cd gtg-perfumes
+git clone https://github.com/your-username/gtg-perfumes.git                                              
+
+
+
+
+
+https://github.com/user-attachments/assets/4404dca3-e498-408c-ba66-670b2288d541
+
+
+
+
 
 
 
