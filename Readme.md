@@ -4,6 +4,8 @@ A fully responsive promotional and product showcase website for **GTG Perfumes**
 - > Built with modern **HTML, CSS, and JavaScript**, this project adapts seamlessly to **all screen sizes** — from large desktops to tablets and mobile devices (including iPhone X / 375px screens).
 
 ---
+``` Performance Report ```
+
 <img width="1188" height="772" alt="image" src="https://github.com/user-attachments/assets/512d0521-bc2e-47b9-9196-091f55268393" />
 
 ## ✨ Features
@@ -35,6 +37,7 @@ git clone https://github.com/your-username/gtg-perfumes.git
 
 
 https://github.com/user-attachments/assets/4404dca3-e498-408c-ba66-670b2288d541
+
 
 
 
